@@ -35,4 +35,11 @@ class LaughTracksApp < Sinatra::Base
     redirect "/comedians"
   end
 
+  get '/comedians/joke' do
+    erb:"comedians/joke"
+  end
+
+  get '/comedians/answer' do
+    erb:"comedians/answer"
+  end
 end
